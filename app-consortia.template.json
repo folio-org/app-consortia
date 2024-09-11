@@ -6,7 +6,7 @@
   "dependencies": [
     {
       "name": "app-platform-full",
-      "version": "^1.0.0"
+      "version": "1.0.0-SNAPSHOT.588"
     }
   ],
   "modules": [
