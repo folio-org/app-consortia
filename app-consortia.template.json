@@ -3,12 +3,7 @@
   "version": "${project.version}",
   "description": "${project.description}",
   "platform": "complete",
-  "dependencies": [
-    {
-      "name": "app-platform-full",
-      "version": "1.0.0-SNAPSHOT.588"
-    }
-  ],
+  "dependencies": [],
   "modules": [
     {
       "name": "mod-consortia-keycloak",
