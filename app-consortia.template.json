@@ -6,19 +6,19 @@
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "^1.0.0-SNAPSHOT"
+      "version": "2.0.0"
     }
   ],
   "modules": [
     {
       "name": "mod-consortia-keycloak",
-      "version": "latest"
+      "version": "1.6.0"
     }
   ],
   "uiModules": [
     {
       "name": "folio_consortia-settings",
-      "version": "latest"
+      "version": "2.0.1"
     }
   ]
 }
