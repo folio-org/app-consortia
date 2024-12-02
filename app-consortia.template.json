@@ -14,11 +14,5 @@
       "name": "mod-consortia-keycloak",
       "version": "latest"
     }
-  ],
-  "uiModules": [
-    {
-      "name": "folio_consortia-settings",
-      "version": "latest"
-    }
   ]
 }
