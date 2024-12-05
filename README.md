@@ -8,8 +8,3 @@ Application descriptor repository for app-consortia.
 |:----------------------------|
 | `mod-consortia-keycloak`    |
 
-## UI Modules
-
-| Module name                 |
-|:----------------------------|
-| `folio_consortia-settings`  |
