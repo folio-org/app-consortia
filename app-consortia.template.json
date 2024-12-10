@@ -3,16 +3,16 @@
   "version": "${project.version}",
   "description": "${project.description}",
   "platform": "complete",
-  "dependencies": [
-    {
-      "name": "app-platform-complete",
-      "version": "^1.0.0-SNAPSHOT"
-    }
-  ],
-  "modules": [
-    {
-      "name": "mod-consortia-keycloak",
-      "version": "latest"
-    }
-  ]
+  "dependencies": [  {
+    "name": "app-platform-complete",
+    "version": "^1.0.0-SNAPSHOT"
+  }],
+  "modules": [  {
+    "name": "mod-consortia-keycloak",
+    "version": "1.6.3"
+  }],
+  "uiModules": [  {
+    "name": "folio_consortia-settings",
+    "version": "2.0.2"
+  }]
 }
