@@ -1,6 +1,6 @@
 {
   "name": "app-consortia",
-  "version": "1.4.0-SNAPSHOT.100200000001395",
+  "version": "1.4.0-SNAPSHOT.100200000001588",
   "description": "Application for Quesnelia",
   "platform": "complete",
   "dependencies": [
@@ -12,7 +12,7 @@
   "modules": [
     {
       "name": "mod-consortia-keycloak",
-      "version": "1.8.0-SNAPSHOT.159"
+      "version": "1.8.0-SNAPSHOT.160"
     }
   ],
   "uiModules": []
