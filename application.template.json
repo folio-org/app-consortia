@@ -6,14 +6,14 @@
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "^VERSION",
+      "version": "^2.5.3",
       "preRelease": "false"
     }
   ],
   "modules": [
     {
       "name": "mod-consortia-keycloak",
-      "version": "^VERSION",
+      "version": "~1.7.4",
       "preRelease": "false"
     }
   ]
