@@ -5,8 +5,8 @@
   <name>${project.name}</name>
   <artifactId>app-consortia</artifactId>
   <groupId>org.folio</groupId>
-  <description>Application for Quesnelia</description>
-  <version>2.0.0</version>
+  <description>Application for Sunflower</description>
+  <version>1.2.3</version>
 
   <properties>
     <project.name>app-consortia</project.name>
