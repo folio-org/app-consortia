@@ -13,7 +13,7 @@
   "modules": [
     {
       "name": "mod-consortia-keycloak",
-      "version": "~1.7.4",
+      "version": "~1.7.3",
       "preRelease": "false"
     }
   ]
