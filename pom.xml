@@ -6,7 +6,7 @@
   <artifactId>app-consortia</artifactId>
   <groupId>org.folio</groupId>
   <description>Application for Sunflower</description>
-  <version>1.2.3</version>
+  <version>1.2.4</version>
 
   <properties>
     <project.name>app-consortia</project.name>
