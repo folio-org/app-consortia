@@ -1,12 +1,12 @@
 {
-  "id" : "app-consortia-1.5.0-SNAPSHOT.100200000012460",
+  "id" : "app-consortia-1.5.0-SNAPSHOT.100200000012537",
   "name" : "app-consortia",
-  "version" : "1.5.0-SNAPSHOT.100200000012460",
+  "version" : "1.5.0-SNAPSHOT.100200000012537",
   "description" : "Application for Quesnelia",
   "modules" : [ {
-    "id" : "mod-consortia-keycloak-2.0.0-SNAPSHOT.2121",
+    "id" : "mod-consortia-keycloak-2.0.0-SNAPSHOT.2151",
     "name" : "mod-consortia-keycloak",
-    "version" : "2.0.0-SNAPSHOT.2121"
+    "version" : "2.0.0-SNAPSHOT.2151"
   } ],
   "uiModules" : [ ],
   "dependencies" : [ {
@@ -15,7 +15,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-consortia-keycloak-2.0.0-SNAPSHOT.2121",
+    "id" : "mod-consortia-keycloak-2.0.0-SNAPSHOT.2151",
     "name" : "Consortia integration business logic module",
     "requires" : [ {
       "id" : "login",
@@ -111,7 +111,7 @@
       }, {
         "methods" : [ "GET" ],
         "pathPattern" : "/consortia/{consortiumId}/_self",
-        "permissionsRequired" : [ ],
+        "permissionsRequired" : [ "*" ],
         "modulePermissions" : [ ]
       }, {
         "methods" : [ "POST" ],
@@ -557,7 +557,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-consortia-keycloak:2.0.0-SNAPSHOT.2121",
+      "dockerImage" : "folioci/mod-consortia-keycloak:2.0.0-SNAPSHOT.2151",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
