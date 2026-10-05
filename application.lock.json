@@ -1,12 +1,12 @@
 {
-  "id" : "app-consortia-1.5.0-SNAPSHOT.100200000012602",
+  "id" : "app-consortia-1.5.0-SNAPSHOT.100200000012661",
   "name" : "app-consortia",
-  "version" : "1.5.0-SNAPSHOT.100200000012602",
+  "version" : "1.5.0-SNAPSHOT.100200000012661",
   "description" : "Application for Quesnelia",
   "modules" : [ {
-    "id" : "mod-consortia-keycloak-2.0.0-SNAPSHOT.2163",
+    "id" : "mod-consortia-keycloak-2.0.0-SNAPSHOT.2177",
     "name" : "mod-consortia-keycloak",
-    "version" : "2.0.0-SNAPSHOT.2163"
+    "version" : "2.0.0-SNAPSHOT.2177"
   } ],
   "uiModules" : [ ],
   "dependencies" : [ {
@@ -15,7 +15,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-consortia-keycloak-2.0.0-SNAPSHOT.2163",
+    "id" : "mod-consortia-keycloak-2.0.0-SNAPSHOT.2177",
     "name" : "Consortia integration business logic module",
     "requires" : [ {
       "id" : "login",
@@ -137,6 +137,11 @@
         "methods" : [ "POST" ],
         "pathPattern" : "/consortia/{consortiumId}/tenants/{tenantId}/custom-login",
         "permissionsRequired" : [ "consortia.custom-login.item.post" ],
+        "modulePermissions" : [ ]
+      }, {
+        "methods" : [ "DELETE" ],
+        "pathPattern" : "/consortia/{consortiumId}/tenants/{tenantId}/custom-login",
+        "permissionsRequired" : [ "consortia.custom-login.item.delete" ],
         "modulePermissions" : [ ]
       }, {
         "methods" : [ "POST" ],
@@ -371,7 +376,7 @@
       "permissionName" : "consortia.all",
       "displayName" : "Consortia API module - all permissions",
       "description" : "All permissions for consortia module",
-      "subPermissions" : [ "consortia.tenants.item.post", "consortia.tenants.item.put", "consortia.tenants.item.delete", "consortia.tenants.item.get", "consortia.user-tenants.collection.get", "consortia.user-tenants.item.get", "consortia.consortium.item.post", "consortia.consortium.item.put", "consortia.consortium.item.get", "consortia.user-tenants.item.post", "consortia.user-tenants.item.delete", "consortia.consortia-configuration.item.post", "consortia.consortia-configuration.item.delete", "consortia.inventory.local.sharing-instances.execute", "consortia.inventory.update-ownership.item.post", "consortia.sync-primary-affiliations.item.post", "consortia.create-primary-affiliations.item.post", "consortia.identity-provider.item.post", "consortia.identity-provider.item.delete", "consortia.custom-login.item.post", "consortia.sharing-instances.item.post", "consortia.sharing-instances.item.get", "consortia.sharing-instances.collection.get", "consortia.publications.item.post", "consortia.publications.item.get", "consortia.publications.item.delete", "consortia.publications-results.item.get", "consortia.sharing-settings.item.post", "consortia.sharing-settings.item.delete", "consortia.sharing-policies.item.post", "consortia.sharing-policies.item.delete", "consortia.sharing-roles.item.post", "consortia.sharing-roles.item.delete", "consortia.sharing-roles-capability-sets.item.post", "consortia.sharing-roles-capability-sets.item.delete", "consortia.sharing-roles-capabilities.item.post", "consortia.sharing-roles-capabilities.item.delete" ]
+      "subPermissions" : [ "consortia.tenants.item.post", "consortia.tenants.item.put", "consortia.tenants.item.delete", "consortia.tenants.item.get", "consortia.user-tenants.collection.get", "consortia.user-tenants.item.get", "consortia.consortium.item.post", "consortia.consortium.item.put", "consortia.consortium.item.get", "consortia.user-tenants.item.post", "consortia.user-tenants.item.delete", "consortia.consortia-configuration.item.post", "consortia.consortia-configuration.item.delete", "consortia.inventory.local.sharing-instances.execute", "consortia.inventory.update-ownership.item.post", "consortia.sync-primary-affiliations.item.post", "consortia.create-primary-affiliations.item.post", "consortia.identity-provider.item.post", "consortia.identity-provider.item.delete", "consortia.custom-login.item.post", "consortia.custom-login.item.delete", "consortia.sharing-instances.item.post", "consortia.sharing-instances.item.get", "consortia.sharing-instances.collection.get", "consortia.publications.item.post", "consortia.publications.item.get", "consortia.publications.item.delete", "consortia.publications-results.item.get", "consortia.sharing-settings.item.post", "consortia.sharing-settings.item.delete", "consortia.sharing-policies.item.post", "consortia.sharing-policies.item.delete", "consortia.sharing-roles.item.post", "consortia.sharing-roles.item.delete", "consortia.sharing-roles-capability-sets.item.post", "consortia.sharing-roles-capability-sets.item.delete", "consortia.sharing-roles-capabilities.item.post", "consortia.sharing-roles-capabilities.item.delete" ]
     }, {
       "permissionName" : "consortia.user-tenants.item.post",
       "displayName" : "post user_tenant",
@@ -412,6 +417,10 @@
       "permissionName" : "consortia.custom-login.item.post",
       "displayName" : "create keycloak custom login flow",
       "description" : "Create keycloak custom login flow"
+    }, {
+      "permissionName" : "consortia.custom-login.item.delete",
+      "displayName" : "delete keycloak custom login flow",
+      "description" : "Delete keycloak custom login flow"
     }, {
       "permissionName" : "consortia.publications.item.post",
       "displayName" : "publish coordinator post request",
@@ -557,7 +566,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-consortia-keycloak:2.0.0-SNAPSHOT.2163",
+      "dockerImage" : "folioci/mod-consortia-keycloak:2.0.0-SNAPSHOT.2177",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
